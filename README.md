@@ -7,3 +7,4 @@
 #### 4. springboot-devtools   ——热部署
 #### 5. springboot-banner     ——自定义banner
 #### 6. springboot-properties ——配置文件
+#### 7. springboot-test       ——关于测试的
