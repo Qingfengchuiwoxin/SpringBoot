@@ -12,6 +12,7 @@
         <module name="springboot-fileupload" />
         <module name="springboot-helloworld" />
         <module name="springboot-jackson" />
+        <module name="springboot-properties" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -26,6 +27,7 @@
       <module name="springboot-fileupload" options="-parameters" />
       <module name="springboot-helloworld" options="-parameters" />
       <module name="springboot-jackson" options="-parameters" />
+      <module name="springboot-properties" options="-parameters" />
     </option>
   </component>
 </project>

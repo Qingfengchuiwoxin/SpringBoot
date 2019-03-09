@@ -6,3 +6,4 @@
 #### 3. springboot-fileupload ——文件上传的
 #### 4. springboot-devtools   ——热部署
 #### 5. springboot-banner     ——自定义banner
+#### 6. springboot-properties ——配置文件

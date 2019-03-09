@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/springboot-fileupload/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-devtools/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-banner/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-properties/pom.xml" />
       </list>
     </option>
   </component>
