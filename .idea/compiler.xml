@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SpringBoot" />
+        <module name="springboot-fileupload" />
         <module name="springboot-helloworld" />
         <module name="springboot-jackson" />
       </profile>
@@ -18,6 +19,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="springboot-1-helloworld" options="-parameters" />
+      <module name="springboot-fileupload" options="-parameters" />
       <module name="springboot-helloworld" options="-parameters" />
       <module name="springboot-jackson" options="-parameters" />
     </option>
