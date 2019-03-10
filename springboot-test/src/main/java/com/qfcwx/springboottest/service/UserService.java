@@ -45,12 +45,12 @@ public interface UserService {
      * @param user
      * @return
      */
-    User updateName(User user);
+    List<User> updateName(User user);
 
     /**
      * 全部更新
      * @param user
      * @return
      */
-    User update(User user);
+    List<User> update(User user);
 }

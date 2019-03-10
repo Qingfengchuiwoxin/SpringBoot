@@ -5,7 +5,6 @@ import com.qfcwx.springboottest.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -23,32 +22,32 @@ public class TestController {
     private UserService userService;
 
     @GetMapping(value = "user")
-    public List<User> findAll(){
+    public List<User> findAll() {
         return userService.findAll();
     }
 
     @GetMapping(value = "user/{id}")
-    public User findOne(@PathVariable("id") Long id){
+    public User findOne(@PathVariable("id") Long id) {
         return userService.findOne(id);
     }
 
     @PostMapping(value = "user")
-    public User save(){
-        return userService.save(new User(100L,"道路千万条",new Date(),"女"));
+    public User save(User user) {
+        return userService.save(user);
     }
 
     @DeleteMapping(value = "user/{id}")
-    public List<User> delete(@PathVariable("id") Long id){
+    public List<User> delete(@PathVariable("id") Long id) {
         return userService.delete(id);
     }
 
     @PatchMapping(value = "user/name")
-    public User updateName(@RequestBody User user){
+    public List<User> updateName(User user) {
         return userService.updateName(user);
     }
 
     @PutMapping(value = "user")
-    public User update(@RequestBody User user){
-        return  userService.update(user);
+    public List<User> update(User user) {
+        return userService.update(user);
     }
 }

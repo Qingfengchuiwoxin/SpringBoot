@@ -19,11 +19,11 @@ public class UserServiceImpl implements UserService {
     private static final List<User> USER_LIST = new ArrayList<>();
 
     static {
-        USER_LIST.add(new User(1L, "清", new Date(), "男"));
-        USER_LIST.add(new User(2L, "风", new Date(), "女"));
-        USER_LIST.add(new User(3L, "吹", new Date(), "男"));
-        USER_LIST.add(new User(4L, "我", new Date(), "男"));
-        USER_LIST.add(new User(5L, "心", new Date(), "女"));
+        USER_LIST.add(new User(1L, "清", 11, "男"));
+        USER_LIST.add(new User(2L, "风", 12, "女"));
+        USER_LIST.add(new User(3L, "吹", 13, "男"));
+        USER_LIST.add(new User(4L, "我", 14, "男"));
+        USER_LIST.add(new User(5L, "心", 15, "女"));
     }
 
     @Override
@@ -56,24 +56,26 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User updateName(User user) {
+    public List<User> updateName(User user) {
+        System.out.println("修改之前:" + USER_LIST);
         for (User user1 : USER_LIST) {
             if (user1.getId().equals(user.getId())) {
                 user1.setName(user.getName());
             }
         }
-        return user;
+        return USER_LIST;
     }
 
     @Override
-    public User update(User user) {
+    public List<User> update(User user) {
+        System.out.println("修改之前:" + USER_LIST);
         for (User user1 : USER_LIST) {
             if (user1.getId().equals(user.getId())) {
                 user1.setName(user.getName());
-                user1.setDate(user.getDate());
+                user1.setAge(user.getAge());
                 user1.setSex(user.getSex());
             }
         }
-        return user;
+        return USER_LIST;
     }
 }

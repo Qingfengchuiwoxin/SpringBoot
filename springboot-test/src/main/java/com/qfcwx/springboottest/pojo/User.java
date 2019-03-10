@@ -1,7 +1,5 @@
 package com.qfcwx.springboottest.pojo;
 
-import java.util.Date;
-
 /**
  * @ClassName: User
  * @Author: 清风一阵吹我心
@@ -15,14 +13,14 @@ public class User {
 
     private String name;
 
-    private Date date;
+    private Integer age;
 
     private String sex;
 
-    public User(Long id, String name, Date date, String sex) {
+    public User(Long id, String name, Integer age, String sex) {
         this.id = id;
         this.name = name;
-        this.date = date;
+        this.age = age;
         this.sex = sex;
     }
 
@@ -42,12 +40,12 @@ public class User {
         this.name = name;
     }
 
-    public Date getDate() {
-        return date;
+    public Integer getAge() {
+        return age;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setAge(Integer age) {
+        this.age = age;
     }
 
     public String getSex() {
@@ -63,7 +61,7 @@ public class User {
         return "User{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", date=" + date +
+                ", age=" + age +
                 ", sex='" + sex + '\'' +
                 '}';
     }

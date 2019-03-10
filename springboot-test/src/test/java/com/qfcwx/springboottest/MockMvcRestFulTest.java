@@ -14,6 +14,8 @@ import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
 import org.springframework.web.context.WebApplicationContext;
 
 /**
@@ -71,6 +73,42 @@ public class MockMvcRestFulTest {
                 .andReturn().getResponse().getContentAsString();
         LOGGER.info("content:{}",content);
     }
+
+    @Test
+    public void save() throws Exception{
+        final MultiValueMap<String,String> params = new LinkedMultiValueMap<>();
+        params.add("id","8");
+        params.add("name","qfcwx");
+        params.add("age","12");
+        params.add("sex","女");
+        String content = mockMvc.perform(MockMvcRequestBuilders.post(SAVE_USER).params(params))
+                .andReturn().getResponse().getContentAsString();
+        LOGGER.info("content:{}",content);
+    }
+
+    @Test
+    public void updateName() throws Exception {
+        final MultiValueMap<String,String> params = new LinkedMultiValueMap<>();
+        params.add("id","1");
+        params.add("name","清风一阵吹我心");
+        String content = mockMvc.perform(MockMvcRequestBuilders.patch(UPDATE_NAME_USER).params(params))
+                .andReturn().getResponse().getContentAsString();
+        LOGGER.info("content:{}",content);
+    }
+
+    @Test
+    public void update() throws Exception {
+        final  MultiValueMap<String,String> params = new LinkedMultiValueMap<>();
+        params.add("id","1");
+        params.add("name","qfcwx");
+        params.add("age","25");
+        params.add("sex","女");
+        String content = mockMvc.perform(MockMvcRequestBuilders.put(UPDATE_USER).params(params))
+                .andReturn().getResponse().getContentAsString();
+        LOGGER.info("content:{}",content);
+    }
+
+
 
 
 }
