@@ -18,6 +18,6 @@ public class JsonController {
 
     @GetMapping("/user")
     public User findUser(){
-        return new User("清风","12345",18,new Date(),"11");
+        return new User(null,"12345",18,new Date(),"12345678951");
     }
 }

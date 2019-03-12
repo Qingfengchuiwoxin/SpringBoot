@@ -13,7 +13,15 @@
         <option value="$PROJECT_DIR$/springboot-banner/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-properties/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-test/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-exception/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-ecxeptions/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-mybatis/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/springboot-exception/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">

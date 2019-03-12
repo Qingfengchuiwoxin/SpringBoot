@@ -1,5 +1,10 @@
 package com.qfcwx.springbootjackson.pojo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.Date;
 
 /**
@@ -11,14 +16,30 @@ import java.util.Date;
  **/
 public class User {
 
+    /**
+     * 空字段不返回
+     */
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     private String username;
 
+    /**
+     * 不显示密码
+     */
+    @JsonIgnore
     private String password;
 
     private int age;
 
+    /**
+     * 格式化,支持正则表达式
+     */
+    @JsonFormat(pattern = "yyyy-MM-dd hh:mm:ss",locale = "zh",timezone = "GMT+8")
     private Date date;
 
+    /**
+     * 指定别名
+     */
+    @JsonProperty("tp")
     private String phone;
 
     public User(String username, String password, int age, Date date,String phone) {

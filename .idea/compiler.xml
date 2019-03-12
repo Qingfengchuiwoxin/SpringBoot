@@ -6,18 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SpringBoot" />
         <module name="springboot-banner" />
         <module name="springboot-devtools" />
+        <module name="springboot-ecxeptions" />
         <module name="springboot-fileupload" />
         <module name="springboot-helloworld" />
         <module name="springboot-jackson" />
+        <module name="springboot-mybatis" />
         <module name="springboot-properties" />
         <module name="springboot-test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="springboot-1-helloworld" target="1.8" />
+      <module name="springboot-exception" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -25,9 +27,12 @@
       <module name="springboot-1-helloworld" options="-parameters" />
       <module name="springboot-banner" options="-parameters" />
       <module name="springboot-devtools" options="-parameters" />
+      <module name="springboot-ecxeptions" options="-parameters" />
+      <module name="springboot-exception" options="-parameters" />
       <module name="springboot-fileupload" options="-parameters" />
       <module name="springboot-helloworld" options="-parameters" />
       <module name="springboot-jackson" options="-parameters" />
+      <module name="springboot-mybatis" options="-parameters" />
       <module name="springboot-properties" options="-parameters" />
       <module name="springboot-test" options="-parameters" />
     </option>
