@@ -17,32 +17,36 @@ public interface UserMapper {
 
     /**
      * 插入
+     *
      * @param user
      * @return
      */
     @Insert("INSERT INTO user(name,phone,age,create_date) VALUES(#{name},#{phone},#{age},#{createDate})")
-    @Options(useGeneratedKeys = true,keyProperty = "id",keyColumn = "id")
+    @Options(useGeneratedKeys = true, keyProperty = "id", keyColumn = "id")
     int insert(User user);
 
     /**
      * 查询所有
+     *
      * @return
      */
-    @Select("SELECT * FROM user")
-    @Results({@Result(column = "create_date",property = "createDate")})
+    @Select("SELECT name,phone,age,create_date FROM user")
+    @Results({@Result(column = "create_date", property = "createDate")})
     List<User> findAll();
 
     /**
      * 根据id查找
+     *
      * @param id
      * @return
      */
-    @Select("SELECT * FROM user WHERE id = #{id}")
-    @Results({@Result(column = "create_date",property = "createDate")})
+    @Select("SELECT name,phone,age,create_date FROM user WHERE id = #{id}")
+    @Results({@Result(column = "create_date", property = "createDate")})
     User findById(Long id);
 
     /**
      * 修改用户名
+     *
      * @param user
      */
     @Update("UPDATE user SET name = #{name} WHERE id = #{id}")
@@ -50,6 +54,7 @@ public interface UserMapper {
 
     /**
      * 根据id删除用户
+     *
      * @param id
      */
     @Delete("DELETE FROM user WHERE id = #{id}")

@@ -48,4 +48,11 @@ public class UserController {
         userService.delete(id);
     }
 
+    @GetMapping(value = "/tran")
+    public Object testTransaction(){
+        int n = userService.testTransaction();
+        return n;
+    }
+
+
 }

@@ -22,4 +22,9 @@ public interface UserService {
     void update(User user);
 
     void delete(Long id);
+
+    /**
+     * 测试事务
+     */
+    int testTransaction();
 }

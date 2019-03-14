@@ -5,7 +5,10 @@ import com.qfcwx.springbootmybatis.pojo.User;
 import com.qfcwx.springbootmybatis.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -48,4 +51,18 @@ public class UserServiceImpl implements UserService {
     public void delete(Long id) {
         userMapper.delete(id);
     }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
+    public int testTransaction() {
+        User user = new User();
+        user.setName("测试事务");
+        user.setPhone("12121212");
+        user.setAge(15);
+        user.setCreateDate(new Date());
+        userMapper.insert(user);
+        int n = 15 / 0;
+        return n;
+    }
+
 }
