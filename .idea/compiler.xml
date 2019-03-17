@@ -15,6 +15,7 @@
         <module name="springboot-mybatis" />
         <module name="springboot-properties" />
         <module name="springboot-redis" />
+        <module name="springboot-schedule" />
         <module name="springboot-test" />
       </profile>
     </annotationProcessing>
@@ -36,6 +37,7 @@
       <module name="springboot-mybatis" options="-parameters" />
       <module name="springboot-properties" options="-parameters" />
       <module name="springboot-redis" options="-parameters" />
+      <module name="springboot-schedule" options="-parameters" />
       <module name="springboot-test" options="-parameters" />
     </option>
   </component>

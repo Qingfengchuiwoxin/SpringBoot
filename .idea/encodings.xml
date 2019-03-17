@@ -11,6 +11,7 @@
     <file url="file://$PROJECT_DIR$/springboot-properties" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-properties/src/main/resources/application.properties" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-redis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-schedule" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-test" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
