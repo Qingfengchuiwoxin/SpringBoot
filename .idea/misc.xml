@@ -16,6 +16,7 @@
         <option value="$PROJECT_DIR$/springboot-exception/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-ecxeptions/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-redis/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

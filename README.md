@@ -10,3 +10,4 @@
 #### 7. springboot-test       ——[关于测试的]
 #### 8. springboot-exception  ——[统一异常处理]
 #### 9. springboot-mybatis    ——[mybatis相关的]
+#### 10.springboot-redis      ——[redis相关的]

@@ -4,15 +4,13 @@
     <file url="file://$PROJECT_DIR$/springboot-banner" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-devtools" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-ecxeptions" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springboot-exception" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springboot-exception" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springboot-exception" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-fileupload" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-helloworld" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-jackson" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-mybatis" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-properties" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-properties/src/main/resources/application.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-redis" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-test" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
