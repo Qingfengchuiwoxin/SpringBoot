@@ -1,8 +1,9 @@
 package com.qfcwx.springbootecxeptions.controller;
 
 import com.qfcwx.springbootecxeptions.pojo.CustomerException;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * @ClassName: ExceptionController
@@ -11,27 +12,19 @@ import org.springframework.web.bind.annotation.RestController;
  * @Date: 2019/3/12 14:20
  * @Version 1.0
  **/
-@RestController
+@Controller
 public class ExceptionController {
 
     @GetMapping(value = "/api/error")
+    @ResponseBody
     public Object exception() {
-        String phone = "18600998237";
-        int parseInt = Integer.parseInt(phone);
-        return parseInt;
+        int i = 1/0;
+        return i;
     }
 
     @GetMapping(value = "/api/error/customer")
     public Object error() {
-        String[] str = new String[]{"数组交表越界", "空指针异常", "数字格式化异常"};
-        for (String s : str) {
-            if ("空指针异常".equals(s)) {
-                throw new CustomerException("1",s);
-            }else{
-                throw new CustomerException("-1","未知异常");
-            }
-        }
-        return null;
+        throw new CustomerException("-1","我也不知道的异常~");
     }
 
 }

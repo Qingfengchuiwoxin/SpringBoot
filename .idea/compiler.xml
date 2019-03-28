@@ -9,9 +9,11 @@
         <module name="springboot-banner" />
         <module name="springboot-devtools" />
         <module name="springboot-ecxeptions" />
+        <module name="springboot-elasticsearch" />
         <module name="springboot-fileupload" />
         <module name="springboot-helloworld" />
         <module name="springboot-jackson" />
+        <module name="springboot-logback" />
         <module name="springboot-mybatis" />
         <module name="springboot-properties" />
         <module name="springboot-redis" />
@@ -30,10 +32,12 @@
       <module name="springboot-banner" options="-parameters" />
       <module name="springboot-devtools" options="-parameters" />
       <module name="springboot-ecxeptions" options="-parameters" />
+      <module name="springboot-elasticsearch" options="-parameters" />
       <module name="springboot-exception" options="-parameters" />
       <module name="springboot-fileupload" options="-parameters" />
       <module name="springboot-helloworld" options="-parameters" />
       <module name="springboot-jackson" options="-parameters" />
+      <module name="springboot-logback" options="-parameters" />
       <module name="springboot-mybatis" options="-parameters" />
       <module name="springboot-properties" options="-parameters" />
       <module name="springboot-redis" options="-parameters" />
