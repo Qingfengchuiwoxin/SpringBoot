@@ -14,3 +14,4 @@
 #### 11.springboot-schedule   ——[定时器相关的]
 #### 12.springboot-logback    ——[日志]
 #### 13.springboot-elasticsearch  ——[整合ES]
+#### 14.springboot-jms        ——[点对点的发布消息]
