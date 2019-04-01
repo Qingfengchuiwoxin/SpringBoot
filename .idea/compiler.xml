@@ -7,11 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-logback" />
+        <module name="springboot-ecxeptions" />
         <module name="springboot-jms" />
         <module name="springboot-jackson" />
         <module name="springboot-banner" />
-        <module name="springboot-ecxeptions" />
         <module name="springboot-elasticsearch" />
+        <module name="springboot-activemq" />
         <module name="springboot-properties" />
         <module name="springboot-schedule" />
         <module name="springboot-fileupload" />
@@ -30,6 +31,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="springboot-1-helloworld" options="-parameters" />
+      <module name="springboot-activemq" options="-parameters" />
       <module name="springboot-banner" options="-parameters" />
       <module name="springboot-devtools" options="-parameters" />
       <module name="springboot-ecxeptions" options="-parameters" />
